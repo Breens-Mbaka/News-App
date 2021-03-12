@@ -5,7 +5,7 @@
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Consuming](#consuming)
-* [Behaviour Driven Development](#behaviour driven development)
+* [Behaviour Driven Development](#behaviour-driven-development)
 
 ## About The Project
 This is a REST API that is used to post news, view information of departments and its employees(users). It has features that allows one access specific info about users and departments, view a list of all the users in a department and also the list of departments a user is associated with.
