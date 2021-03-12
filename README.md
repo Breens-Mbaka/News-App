@@ -19,9 +19,9 @@ This is a REST API that is used to post news, view information of departments an
 * Postman (test Api)
 
 
-## Usage
+## Consuming
 
-This api is hosted on Heroku, so you can choose to consume using this link [https://org-news-portal.herokuapp.com/](https://org-news-portal.herokuapp.com/)
+This api is hosted on Heroku, so you can choose to consume using this [link](https://news-on-api.herokuapp.com/)
 
 These are the REST api routes:
 
