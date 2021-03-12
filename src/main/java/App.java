@@ -29,18 +29,17 @@ public class App {
         Sql2oNewsDao newsDao;
         Sql2oUserDao userDao;
         Sql2oDepartmentDao departmentDao;
-        Connection conn;
         Gson gson = new Gson();
 
-        String connectionString = "jdbc:postgresql://ec2-54-164-22-242.compute-1.amazonaws.com/darcrhe3ap8lt6?sslmode=require";
-        Sql2o sql2o = new Sql2o(connectionString, "cpuenhksvszlur", "202dee8e2f645a18ac3b3a39cc93b2400cee8b8aa636be59d75f5b20042eab45");
+        String connectionString = "jdbc:postgresql://ec2-18-214-208-89.compute-1.amazonaws.com/d37j16upu62oer?sslmode=require";
+        Sql2o sql2o = new Sql2o(connectionString, "\n" +
+                "uqllkztfulkmoa", "e2d14d49278a6ee1ef4d3bdac25db69eeea26d787035241bf14ab41b51e42900");
 
         departmentDao = new Sql2oDepartmentDao(sql2o);
         newsDao = new Sql2oNewsDao(sql2o);
         departmentNewsDao = new Sql2oDepartmentNewsDao(sql2o);
         userDao = new Sql2oUserDao(sql2o);
 
-        conn = sql2o.open();
         //get: view all departments
         get("/", "application/json", (req, res) ->{
             Map<String, Object> models = new HashMap<>();
