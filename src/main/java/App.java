@@ -32,8 +32,8 @@ public class App {
         Connection conn;
         Gson gson = new Gson();
 
-        String connectionString = "jdbc:postgresql://ec2-54-236-146-234.compute-1.amazonaws.com:5432/dafjrlb70vohp0?sslmode=require";
-        Sql2o sql2o = new Sql2o(connectionString, "mlclffkfpoejwn", "43522bff0832691175a74becb42add4efb1ea951660355ee9cc3250dbc7c77df");
+        String connectionString = "jdbc:postgresql://ec2-54-164-22-242.compute-1.amazonaws.com/darcrhe3ap8lt6?sslmode=require";
+        Sql2o sql2o = new Sql2o(connectionString, "cpuenhksvszlur", "202dee8e2f645a18ac3b3a39cc93b2400cee8b8aa636be59d75f5b20042eab45");
 
         departmentDao = new Sql2oDepartmentDao(sql2o);
         newsDao = new Sql2oNewsDao(sql2o);
